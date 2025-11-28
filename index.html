@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Augustus' Advent Calendar 2025</title>
+
+	<!-- Mobile-friendly viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Style sheet link -->
+	<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Lato:300,400,700'>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/css/ionicons.min.css">
+	<link rel="stylesheet" href="style.css" media="all">
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<h1 style="text-align: center;">Augustus' Advent Calendar 2025</h1>
+		<p style="text-align: center;">Come back each day in December to uncover a spice, a recipe, a little tidbit
+			about cooking.</p>
+		<p style="text-align: center;">Augstus is known for his many feasts within Felfrost events. He also runs
+			Augustus' Apothocary, supplying medicinal remedies that grant special abilities.</p>
+		<img src="images/background.jpg" alt="A Knight Before Christmas" width="400" height="533" id="adventCal">
+		<ul id="adventDoors"></ul>
+	</div>
+	<div id="popupModal" class="modal">
+		<div class="modal-content">
+			<span class="close-button">&times;</span>
+			<div id="card-container-1" class="a-card hidden">
+				<div id="card-title">Long Pepper</div>
+				<div id="longpepper-image"></div>
+				<div id="method">
+					<div id="card-about">
+						Long pepper was popular in ancient Greece and Rome. It's now cultivated in India and Indonesia
+						and used in Asian and African cuisines. Resembling small, elongated pinecones, long pepper
+						offers a flavor similar to black pepper, but with an earthy undertone and a slightly numbing
+						finish. You can use it in place of black pepper in any recipe. You'll need a spice grinder or
+						mill for ground use or spice blends, but for stews or slow-cooked dishes, you can simply add a
+						few whole peppers to the pot and remove them before serving.<br><br>
+						Augustus has used this in many recipes served at feasts and also finely ground, as a topping like pepper, for
+						people to add as they see fit.
+					</div>
+				</div>
+			</div>
+			<div id="card-container-2" class="a-card hidden">
+				<div id="card-title">Gladiator Puls</div>
+				<div id="gladiator-puls-image"></div>
+				<div id="method">
+					<div id="card-about">
+						Puls is a pottage, like a porridge, served as a hearty
+						meal. This recipe is from <a href="https://www.tastinghistory.com/recipes/gladiatorpuls" target="_blank">Tasting History</a>. 
+						Augustus served it to the fighters early in the day at Ironclad.
+					</div>
+				</div>
+
+				<div id="details">Time requirements: <span class="detail-value">Soaking overnight</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Ingredients</span>
+					<ul class="checkmark">
+						<li>1 cup (150 g) dried fava beans</li>
+						<li>1 cup (170 g) barley, preferably hulled barley, but pearl will work</li>
+						<li>3 tablespoons olive oil</li>
+						<li>1 onion, chopped</li>
+						<li>1 quart (1 L) water</li>
+						<li>3 cloves garlic, pressed</li>
+						<li>2 tablespoons red wine vinegar</li>
+						<li>1 teaspoon salt</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method</span>
+					<ol>
+						<li>Soak the barley and fava beans in cool water overnight.</li>
+						<li>After they’ve soaked, remove the peels from the fava beans (or buy pre-peeled beans).</li>
+						<li>In a large pot, stir together the olive oil and onions so that the onions are coated in the oil. Set it over medium heat and cook for 5 minutes or until the onions are translucent.</li>
+						<li>Add the water to the pot and bring it to a boil. Be careful because the water and oil might spatter.</li>
+						<li>When the water is boiling, add the barley. Cover and cook for 30 minutes. If you're using pearl barley, cook it for 15 minutes.</li>
+						<li>Stir in the fava beans, garlic, vinegar, and salt. Simmer uncovered for about 30 minutes, or until it becomes a thick porridge.</li>
+						<li>You can top with some honey if you like.</li>
+						</ul>
+				</div>
+			</div>
+			<div id="card-container-3" class="a-card hidden">
+				<div id="card-title">Garum</div>
+				<div id="garum-image"></div>
+				<span class="card-item-title">About</span>
+				<div id="card-about">
+					Garum is an ancient Roman condiment made by fermenting fish. It was made using
+					whole fish, or parts of fish, and mixing with herbs and lots of salt. It took months
+					to ferment this down, sitting in the sun, then strained to get the liquid garum. It is
+					a savoury, salty condiment and the modern Asian fish sauces are very similar in taste.<br><br>
+					In the photo you can see an Italian <a href="https://en.wikipedia.org/wiki/Colatura_di_alici" target="_blank">Colatura di alici</a> and a typical Asian
+					fish sauce. More information at the <a href="https://en.wikipedia.org/wiki/Garum" target="_blank">Wikipedia Garum</a> page.
+				</div>
+			</div>
+			<div id="card-container-4" class="a-card hidden">
+				<div id="card-title">Nutmeg</div>
+				<div id="nutmeg-image"></div>
+				<span class="card-item-title">About</span>
+				<div id="card-about">
+					Nutmeg, and the ground spice we use, is a tree seed/pit. What's often not known is another common spice, Mace,
+					is produced from the seed covering. The history of nutmeg is quite tragic in the wars waged over 
+					its production (See <a href="https://www.myspicer.com/history-of-nutmeg/" target="_blank">MySpicer.com history</a>). Freshly
+					grated nutmeg has an amazing blend of aromas from sweet and spicy, to woody/nutty.<br><br>
+					More information at the <a href="https://en.wikipedia.org/wiki/Nutmeg" target="_blank">Wikipedia Nutmeg</a> page.
+				</div>
+
+			</div>
+			<div id="card-container-5" class="a-card hidden">
+				<div id="card-title">Ancient Roman Cake</div>
+				<div id="roman-cake-image"></div>
+				<div id="method">
+					<div id="card-about">
+						Also known as Torta Antica Roma, has a buttery base spread with jam and topped with a whipped ricotta filling. This recipe
+						is from <a href="https://anitalianinmykitchen.com/ancient-roman-cake-torta-antica-roma/" target="_blank">An Italian in my Kitchen</a>.
+					</div>
+				</div>
+				<div id="details">Prep time: <span class="detail-value">60 minutes</span> | Cook time: <span
+						class="detail-value">40 minutes</span> | Yield: <span class="detail-value">Makes one pie</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">For the Dough:</span>
+					<ul class="checkmark">
+						<li>2 cups pastry flour (260 grams)</li>
+						<li>½ cup granulated sugar (100 grams)</li>
+						<li>1 teaspoon baking powder</li>
+						<li>¼ teaspoon salt</li>
+						<li>¾ cup + 2 ¼ tablespoons unsalted butter (softened) (200 grams)</li>
+						<li>1 large egg (room temperature)</li>
+					</ul>
+					<span class="card-item-title">For the Filling:</span>
+					<ul class="checkmark">
+						<li>¼-½ cup strawberry jam (80-160 grams)</li>
+						<li>1 cup ricotta cheese (250 grams)</li>
+						<li>2½ tablespoons powdered/icing sugar</li>
+					</ul>
+					<span class="card-item-title">For Finishing:</span>
+					<ul class="checkmark">
+						<li>1-2 tablespoons milk (for brushing the dough)</li>
+						<li>2-3 tablespoons powdered/icing sugar (for dusting)</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method:</span>
+					<ol>
+						<li>Pre-heat the oven to 350F (180C). Lightly grease and flour an 8 inch pie plate.</li>
+						<li>Divide the dough in half and roll one half into a circle 1/8 inch thick, place in the prepared pie pan, (don't worry if it breaks just press it together to fit in the pan with your fingers), prick the bottom of the dough with a fork, spread with a layer of jam, thin or thicker as you prefer, refrigerate.</li>
+						<li>While the base in chilling, in a small bowl beat together the ricotta and powdered sugar until creamy.</li>
+						<li>Remove the dough from the fridge, and spread the ricotta on top of the jam, refrigerate.</li>
+						<li>Roll the remaining dough into a circle a bit thicker than 1/8 inch, place on top of the ricotta and seal the edges, brush with a milk. Bake for approximately 30-35 minutes or until golden.</li>
+						<li>Let the cake cool completely then dust with powdered sugar before serving.</li>
+					</ol>
+				</div>
+			</div>
+			<div id="card-container-6" class="a-card hidden">
+				<div id="card-title">Tavern Bread</div>
+				<div id="tavern-bread-image"></div>
+				<div id="method">
+					<div id="card-about">
+						This hearty bread stuffed with sausage and cheese has been a favourite at Augustus' feasts. If you cannot
+					find buttermilk, you can combine 1 cup of whole mile with 1 tablespoon of white vinegar, stir, and let rest
+				for 5 to 10 minutes.</a>
+					</div>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Title</span>
+					<ul class="checkmark">
+						<li>1 cup of unbleached flour</li>
+						<li>2 cups of whole wheat flour</li>
+						<li>1/2 teaspoon of salt</li>
+						<li>2 teaspoons of baking powder</li>
+						<li>1-2 cups of buttermilk</li>
+						<li>1 cup of cheddar cheese</li>
+						<li>1 cup of summer sausage</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method:</span>
+					<ol>
+						<li>Preheat oven to 450 degrees.</li>
+						<li>Sift the flours together with salt and baking powder in a mixing bowl.</li>
+						<li>Add the meat and cheese and mix together.</li>
+						<li>Make a well in the flour and add buttermilk slowly while mixing.</li>
+						<li>Making sure that the dough is moist pat into a loaf and place into a oiled cast iron skillet.</li>
+						<li>Bake for 10 minutes or until the bread has risen then lower heat to 375 degrees and bake for another 30 to 35 minutes or until done.</li>
+					</ol>
+				</div>
+			</div>
+			<div id="card-container-7" class="a-card hidden">
+				<div id="card-title">Grains of Paradise</div>
+				<div id="grains-of-paradise-image"></div>
+				<div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+						class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one loaf</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Ingredients</span>
+					<ul class="checkmark">
+						<li>2 to 3 very ripe bananas, peeled</li>
+						<li>1/3 cup melted butter</li>
+						<li>1 teaspoon baking soda</li>
+						<li>Pinch of salt</li>
+						<li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+						<li>1 large egg, beaten</li>
+						<li>1 teaspoon vanilla extract</li>
+						<li>1 1/2 cups of all-purpose flour</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method</span>
+					<ol>
+						<li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+						<li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted
+							butter into the mashed bananas.</li>
+						<li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in
+							the flour.</li>
+						<li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C),
+							or until a tester inserted into the center comes out clean.</li>
+						<li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread
+							from the pan and let cool completely before serving. Slice and serve. (A bread knife helps
+							to make slices that aren't crumbly.)</li>
+						</ul>
+				</div>
+			</div>
+			<div id="card-container-8" class="a-card hidden">
+				<div id="card-title">Asafoetida</div>
+				<div id="asafoetida-image"></div>
+				<div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+						class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one loaf</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Ingredients</span>
+					<ul class="checkmark">
+						<li>2 to 3 very ripe bananas, peeled</li>
+						<li>1/3 cup melted butter</li>
+						<li>1 teaspoon baking soda</li>
+						<li>Pinch of salt</li>
+						<li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+						<li>1 large egg, beaten</li>
+						<li>1 teaspoon vanilla extract</li>
+						<li>1 1/2 cups of all-purpose flour</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method</span>
+					<ol>
+						<li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+						<li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted
+							butter into the mashed bananas.</li>
+						<li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in
+							the flour.</li>
+						<li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C),
+							or until a tester inserted into the center comes out clean.</li>
+						<li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread
+							from the pan and let cool completely before serving. Slice and serve. (A bread knife helps
+							to make slices that aren't crumbly.)</li>
+						</ul>
+				</div>
+			</div>
+			<div id="card-container-9" class="a-card hidden">
+				<div id="card-title">Cinnamon</div>
+				<div id="cinnamon-image"></div>
+				<div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+						class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one loaf</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Ingredients</span>
+					<ul class="checkmark">
+						<li>2 to 3 very ripe bananas, peeled</li>
+						<li>1/3 cup melted butter</li>
+						<li>1 teaspoon baking soda</li>
+						<li>Pinch of salt</li>
+						<li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+						<li>1 large egg, beaten</li>
+						<li>1 teaspoon vanilla extract</li>
+						<li>1 1/2 cups of all-purpose flour</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method</span>
+					<ol>
+						<li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+						<li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted
+							butter into the mashed bananas.</li>
+						<li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in
+							the flour.</li>
+						<li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C),
+							or until a tester inserted into the center comes out clean.</li>
+						<li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread
+							from the pan and let cool completely before serving. Slice and serve. (A bread knife helps
+							to make slices that aren't crumbly.)</li>
+						</ul>
+				</div>
+			</div>
+			<div id="card-container-10" class="a-card hidden">
+				<div id="card-title">Gladiator Puls</div>
+				<div id="gladiator-puls-image"></div>
+				<div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+						class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one loaf</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Ingredients</span>
+					<ul class="checkmark">
+						<li>2 to 3 very ripe bananas, peeled</li>
+						<li>1/3 cup melted butter</li>
+						<li>1 teaspoon baking soda</li>
+						<li>Pinch of salt</li>
+						<li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+						<li>1 large egg, beaten</li>
+						<li>1 teaspoon vanilla extract</li>
+						<li>1 1/2 cups of all-purpose flour</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method</span>
+					<ol>
+						<li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+						<li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted
+							butter into the mashed bananas.</li>
+						<li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in
+							the flour.</li>
+						<li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C),
+							or until a tester inserted into the center comes out clean.</li>
+						<li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread
+							from the pan and let cool completely before serving. Slice and serve. (A bread knife helps
+							to make slices that aren't crumbly.)</li>
+						</ul>
+				</div>
+			</div>
+			<div id="card-container-11" class="a-card hidden">
+				<div id="card-title">Gladiator Puls</div>
+				<div id="gladiator-puls-image"></div>
+				<div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+						class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one loaf</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Ingredients</span>
+					<ul class="checkmark">
+						<li>2 to 3 very ripe bananas, peeled</li>
+						<li>1/3 cup melted butter</li>
+						<li>1 teaspoon baking soda</li>
+						<li>Pinch of salt</li>
+						<li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+						<li>1 large egg, beaten</li>
+						<li>1 teaspoon vanilla extract</li>
+						<li>1 1/2 cups of all-purpose flour</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method</span>
+					<ol>
+						<li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+						<li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted
+							butter into the mashed bananas.</li>
+						<li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in
+							the flour.</li>
+						<li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C),
+							or until a tester inserted into the center comes out clean.</li>
+						<li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread
+							from the pan and let cool completely before serving. Slice and serve. (A bread knife helps
+							to make slices that aren't crumbly.)</li>
+						</ul>
+				</div>
+			</div>
+			<div id="card-container-12" class="a-card hidden">
+				<div id="card-title">Gladiator Puls</div>
+				<div id="gladiator-puls-image"></div>
+				<div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+						class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one loaf</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Ingredients</span>
+					<ul class="checkmark">
+						<li>2 to 3 very ripe bananas, peeled</li>
+						<li>1/3 cup melted butter</li>
+						<li>1 teaspoon baking soda</li>
+						<li>Pinch of salt</li>
+						<li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+						<li>1 large egg, beaten</li>
+						<li>1 teaspoon vanilla extract</li>
+						<li>1 1/2 cups of all-purpose flour</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method</span>
+					<ol>
+						<li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+						<li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted
+							butter into the mashed bananas.</li>
+						<li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in
+							the flour.</li>
+						<li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C),
+							or until a tester inserted into the center comes out clean.</li>
+						<li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread
+							from the pan and let cool completely before serving. Slice and serve. (A bread knife helps
+							to make slices that aren't crumbly.)</li>
+						</ul>
+				</div>
+			</div>
+			<div id="card-container-13" class="a-card hidden">
+				<div id="card-title">Gladiator Puls</div>
+				<div id="gladiator-puls-image"></div>
+				<div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+						class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one loaf</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Ingredients</span>
+					<ul class="checkmark">
+						<li>2 to 3 very ripe bananas, peeled</li>
+						<li>1/3 cup melted butter</li>
+						<li>1 teaspoon baking soda</li>
+						<li>Pinch of salt</li>
+						<li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+						<li>1 large egg, beaten</li>
+						<li>1 teaspoon vanilla extract</li>
+						<li>1 1/2 cups of all-purpose flour</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method</span>
+					<ol>
+						<li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+						<li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted
+							butter into the mashed bananas.</li>
+						<li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in
+							the flour.</li>
+						<li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C),
+							or until a tester inserted into the center comes out clean.</li>
+						<li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread
+							from the pan and let cool completely before serving. Slice and serve. (A bread knife helps
+							to make slices that aren't crumbly.)</li>
+						</ul>
+				</div>
+			</div>
+			<div id="card-container-14" class="a-card hidden">
+				<div id="card-title">Gladiator Puls</div>
+				<div id="gladiator-puls-image"></div>
+				<div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+						class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one loaf</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Ingredients</span>
+					<ul class="checkmark">
+						<li>2 to 3 very ripe bananas, peeled</li>
+						<li>1/3 cup melted butter</li>
+						<li>1 teaspoon baking soda</li>
+						<li>Pinch of salt</li>
+						<li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+						<li>1 large egg, beaten</li>
+						<li>1 teaspoon vanilla extract</li>
+						<li>1 1/2 cups of all-purpose flour</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method</span>
+					<ol>
+						<li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+						<li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted
+							butter into the mashed bananas.</li>
+						<li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in
+							the flour.</li>
+						<li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C),
+							or until a tester inserted into the center comes out clean.</li>
+						<li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread
+							from the pan and let cool completely before serving. Slice and serve. (A bread knife helps
+							to make slices that aren't crumbly.)</li>
+						</ul>
+				</div>
+			</div>
+			<div id="card-container-15" class="a-card hidden">
+				<div id="card-title">Gladiator Puls</div>
+				<div id="gladiator-puls-image"></div>
+				<div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+						class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one loaf</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Ingredients</span>
+					<ul class="checkmark">
+						<li>2 to 3 very ripe bananas, peeled</li>
+						<li>1/3 cup melted butter</li>
+						<li>1 teaspoon baking soda</li>
+						<li>Pinch of salt</li>
+						<li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+						<li>1 large egg, beaten</li>
+						<li>1 teaspoon vanilla extract</li>
+						<li>1 1/2 cups of all-purpose flour</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method</span>
+					<ol>
+						<li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+						<li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted
+							butter into the mashed bananas.</li>
+						<li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in
+							the flour.</li>
+						<li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C),
+							or until a tester inserted into the center comes out clean.</li>
+						<li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread
+							from the pan and let cool completely before serving. Slice and serve. (A bread knife helps
+							to make slices that aren't crumbly.)</li>
+						</ul>
+				</div>
+			</div>
+			<div id="card-container-16" class="a-card hidden">
+				<div id="card-title">Gladiator Puls</div>
+				<div id="gladiator-puls-image"></div>
+				<div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+						class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one loaf</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Ingredients</span>
+					<ul class="checkmark">
+						<li>2 to 3 very ripe bananas, peeled</li>
+						<li>1/3 cup melted butter</li>
+						<li>1 teaspoon baking soda</li>
+						<li>Pinch of salt</li>
+						<li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+						<li>1 large egg, beaten</li>
+						<li>1 teaspoon vanilla extract</li>
+						<li>1 1/2 cups of all-purpose flour</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method</span>
+					<ol>
+						<li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+						<li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted
+							butter into the mashed bananas.</li>
+						<li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in
+							the flour.</li>
+						<li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C),
+							or until a tester inserted into the center comes out clean.</li>
+						<li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread
+							from the pan and let cool completely before serving. Slice and serve. (A bread knife helps
+							to make slices that aren't crumbly.)</li>
+						</ul>
+				</div>
+			</div>
+			<div id="card-container-17" class="a-card hidden">
+				<div id="card-title">Gladiator Puls</div>
+				<div id="gladiator-puls-image"></div>
+				<div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+						class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one loaf</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Ingredients</span>
+					<ul class="checkmark">
+						<li>2 to 3 very ripe bananas, peeled</li>
+						<li>1/3 cup melted butter</li>
+						<li>1 teaspoon baking soda</li>
+						<li>Pinch of salt</li>
+						<li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+						<li>1 large egg, beaten</li>
+						<li>1 teaspoon vanilla extract</li>
+						<li>1 1/2 cups of all-purpose flour</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method</span>
+					<ol>
+						<li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+						<li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted
+							butter into the mashed bananas.</li>
+						<li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in
+							the flour.</li>
+						<li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C),
+							or until a tester inserted into the center comes out clean.</li>
+						<li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread
+							from the pan and let cool completely before serving. Slice and serve. (A bread knife helps
+							to make slices that aren't crumbly.)</li>
+						</ul>
+				</div>
+			</div>
+			<div id="card-container-18" class="a-card hidden">
+				<div id="card-title">Gladiator Puls</div>
+				<div id="gladiator-puls-image"></div>
+				<div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+						class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one loaf</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Ingredients</span>
+					<ul class="checkmark">
+						<li>2 to 3 very ripe bananas, peeled</li>
+						<li>1/3 cup melted butter</li>
+						<li>1 teaspoon baking soda</li>
+						<li>Pinch of salt</li>
+						<li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+						<li>1 large egg, beaten</li>
+						<li>1 teaspoon vanilla extract</li>
+						<li>1 1/2 cups of all-purpose flour</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method</span>
+					<ol>
+						<li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+						<li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted
+							butter into the mashed bananas.</li>
+						<li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in
+							the flour.</li>
+						<li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C),
+							or until a tester inserted into the center comes out clean.</li>
+						<li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread
+							from the pan and let cool completely before serving. Slice and serve. (A bread knife helps
+							to make slices that aren't crumbly.)</li>
+						</ul>
+				</div>
+			</div>
+			<div id="card-container-19" class="a-card hidden">
+				<div id="card-title">Gladiator Puls</div>
+				<div id="gladiator-puls-image"></div>
+				<div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+						class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one loaf</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Ingredients</span>
+					<ul class="checkmark">
+						<li>2 to 3 very ripe bananas, peeled</li>
+						<li>1/3 cup melted butter</li>
+						<li>1 teaspoon baking soda</li>
+						<li>Pinch of salt</li>
+						<li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+						<li>1 large egg, beaten</li>
+						<li>1 teaspoon vanilla extract</li>
+						<li>1 1/2 cups of all-purpose flour</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method</span>
+					<ol>
+						<li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+						<li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted
+							butter into the mashed bananas.</li>
+						<li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in
+							the flour.</li>
+						<li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C),
+							or until a tester inserted into the center comes out clean.</li>
+						<li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread
+							from the pan and let cool completely before serving. Slice and serve. (A bread knife helps
+							to make slices that aren't crumbly.)</li>
+						</ul>
+				</div>
+			</div>
+			<div id="card-container-20" class="a-card hidden">
+				<div id="card-title">Gladiator Puls</div>
+				<div id="gladiator-puls-image"></div>
+				<div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+						class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one loaf</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Ingredients</span>
+					<ul class="checkmark">
+						<li>2 to 3 very ripe bananas, peeled</li>
+						<li>1/3 cup melted butter</li>
+						<li>1 teaspoon baking soda</li>
+						<li>Pinch of salt</li>
+						<li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+						<li>1 large egg, beaten</li>
+						<li>1 teaspoon vanilla extract</li>
+						<li>1 1/2 cups of all-purpose flour</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method</span>
+					<ol>
+						<li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+						<li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted
+							butter into the mashed bananas.</li>
+						<li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in
+							the flour.</li>
+						<li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C),
+							or until a tester inserted into the center comes out clean.</li>
+						<li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread
+							from the pan and let cool completely before serving. Slice and serve. (A bread knife helps
+							to make slices that aren't crumbly.)</li>
+						</ul>
+				</div>
+			</div>
+			<div id="card-container-21" class="a-card hidden">
+				<div id="card-title">Gladiator Puls</div>
+				<div id="gladiator-puls-image"></div>
+				<div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+						class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one loaf</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Ingredients</span>
+					<ul class="checkmark">
+						<li>2 to 3 very ripe bananas, peeled</li>
+						<li>1/3 cup melted butter</li>
+						<li>1 teaspoon baking soda</li>
+						<li>Pinch of salt</li>
+						<li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+						<li>1 large egg, beaten</li>
+						<li>1 teaspoon vanilla extract</li>
+						<li>1 1/2 cups of all-purpose flour</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method</span>
+					<ol>
+						<li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+						<li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted
+							butter into the mashed bananas.</li>
+						<li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in
+							the flour.</li>
+						<li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C),
+							or until a tester inserted into the center comes out clean.</li>
+						<li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread
+							from the pan and let cool completely before serving. Slice and serve. (A bread knife helps
+							to make slices that aren't crumbly.)</li>
+						</ul>
+				</div>
+			</div>
+			<div id="card-container-22" class="a-card hidden">
+				<div id="card-title">Gladiator Puls</div>
+				<div id="gladiator-puls-image"></div>
+				<div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+						class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one loaf</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Ingredients</span>
+					<ul class="checkmark">
+						<li>2 to 3 very ripe bananas, peeled</li>
+						<li>1/3 cup melted butter</li>
+						<li>1 teaspoon baking soda</li>
+						<li>Pinch of salt</li>
+						<li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+						<li>1 large egg, beaten</li>
+						<li>1 teaspoon vanilla extract</li>
+						<li>1 1/2 cups of all-purpose flour</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method</span>
+					<ol>
+						<li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+						<li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted
+							butter into the mashed bananas.</li>
+						<li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in
+							the flour.</li>
+						<li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C),
+							or until a tester inserted into the center comes out clean.</li>
+						<li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread
+							from the pan and let cool completely before serving. Slice and serve. (A bread knife helps
+							to make slices that aren't crumbly.)</li>
+						</ul>
+				</div>
+			</div>
+			<div id="card-container-23" class="a-card hidden">
+				<div id="card-title">Gladiator Puls</div>
+				<div id="gladiator-puls-image"></div>
+				<div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+						class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one loaf</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Ingredients</span>
+					<ul class="checkmark">
+						<li>2 to 3 very ripe bananas, peeled</li>
+						<li>1/3 cup melted butter</li>
+						<li>1 teaspoon baking soda</li>
+						<li>Pinch of salt</li>
+						<li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+						<li>1 large egg, beaten</li>
+						<li>1 teaspoon vanilla extract</li>
+						<li>1 1/2 cups of all-purpose flour</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method</span>
+					<ol>
+						<li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+						<li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted
+							butter into the mashed bananas.</li>
+						<li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in
+							the flour.</li>
+						<li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C),
+							or until a tester inserted into the center comes out clean.</li>
+						<li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread
+							from the pan and let cool completely before serving. Slice and serve. (A bread knife helps
+							to make slices that aren't crumbly.)</li>
+						</ul>
+				</div>
+			</div>
+			<div id="card-container-24" class="a-card hidden">
+				<div id="card-title">Gladiator Puls</div>
+				<div id="gladiator-puls-image"></div>
+				<div id="details">Prep time: <span class="detail-value">10 minutes</span> | Cook time: <span
+						class="detail-value">55 minutes</span> | Yield: <span class="detail-value">Makes one loaf</span>
+				</div>
+				<div id="card-items">
+					<span class="card-item-title">Ingredients</span>
+					<ul class="checkmark">
+						<li>2 to 3 very ripe bananas, peeled</li>
+						<li>1/3 cup melted butter</li>
+						<li>1 teaspoon baking soda</li>
+						<li>Pinch of salt</li>
+						<li>3/4 cup sugar (1/2 cup if you would like it less sweet, 1 cup if more sweet)</li>
+						<li>1 large egg, beaten</li>
+						<li>1 teaspoon vanilla extract</li>
+						<li>1 1/2 cups of all-purpose flour</li>
+					</ul>
+				</div>
+
+				<div id="method">
+					<span class="card-item-title">Method</span>
+					<ol>
+						<li>Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.</li>
+						<li>In a mixing bowl, mash the ripe bananas with a fork until completely smooth. Stir the melted
+							butter into the mashed bananas.</li>
+						<li>Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in
+							the flour.</li>
+						<li>Pour the batter into your prepared loaf pan. Bake for 50 minutes to 1 hour at 350°F (175°C),
+							or until a tester inserted into the center comes out clean.</li>
+						<li>Remove from oven and let cool in the pan for a few minutes. Then remove the banana bread
+							from the pan and let cool completely before serving. Slice and serve. (A bread knife helps
+							to make slices that aren't crumbly.)</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+
+		<script src="scripts/calendar.js"></script>
+
+</body>
+
+</html>

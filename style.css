@@ -1,0 +1,243 @@
+body {
+  background: radial-gradient(#C2384C 0%, #86363D 100%);;
+  font-family: sans-serif;
+}
+h1, p {
+	color: #efeee8e7; /* Red */
+}
+
+.wrapper {
+  width: 400px;
+  margin: 20px auto;
+}
+.title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+ul#adventDoors {
+	position: relative;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#adventDoors li {
+	position: absolute;
+}
+#adventDoors li a {
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	font-size: 24px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-decoration: none;
+	border: 1px #fff solid;
+}
+#adventDoors li a:not(.disabled):hover {
+	color: #fff;
+	background-color: transparent;
+	background-color: rgba(255,255,255,0.15);
+}
+#adventDoors li a.disabled {
+	border-color: #b6fe98;
+	background-color: rgba(196,254,171,0.15);
+	color: #b6fe98;
+	cursor: default;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    animation: fadeIn 0.5s;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+#card-container {
+  background: #ededed;
+  box-shadow: 0px 0px 200px #999;
+  font-family: 'Oxygen', sans-serif;
+  width: 95%;
+  height: 95%;
+  margin: 5% auto;
+}
+
+#card-title {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  background: #455560;
+  padding: 15px 20px;
+  color: #fff;
+  border-radius: 2px 2px 0 0;
+}
+
+#details {
+  background: #fff;
+  border-left: solid 1px #ededed;
+  border-right: solid 1px #ededed;
+  font-size: 16px;
+  font-family: 'Oxygen', sans-serif;
+  padding: 15px 20px;
+}
+
+.detail-value {
+  color: #455560;
+}
+
+#card-items {
+  background: #ededed;
+  font-family: 'Oxygen', sans-serif;
+  padding: 20px
+}
+
+.card-item-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+ul.checkmark li:before {
+    color: #455560;
+    content:"\2713\0020";
+    font-weight: 600;
+    margin-left: -38px;
+    margin-right: 10px;
+}
+
+.checkmark li {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
+#method {
+  background: #fff;
+  border-left: solid 1px #ededed;
+  border-right: solid 1px #ededed;
+  border-bottom: solid 1px #ededed;
+  padding: 20px;
+}
+
+#method li {
+  list-style-position: inside;
+  margin-bottom: 10px;
+  margin-left: -38px;
+  list-style-type: none;
+}
+
+#longpepper-image {
+  background: url('images/longpepper.jpeg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
+#gladiator-puls-image {
+  background: url('images/gladiator_puls.jpg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
+#garum-image {
+  background: url('images/garum.jpeg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
+#nutmeg-image {
+  background: url('images/nutmeg.jpeg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
+#roman-cake-image {
+  background: url('images/Roman_cake.jpg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
+#tavern-bread-image {
+  background: url('images/tavern_bread.jpg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
+#grains-of-paradise-image {
+  background: url('images/grains_of_paradise.jpeg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
+#asafoetida-image {
+  background: url('images/asafoetida.jpeg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
+#cinnamon-image {
+  background: url('images/cinnamon.jpeg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
+
+ol {
+  counter-reset: item;
+}
+
+ol > li {
+  counter-increment: item;
+}
+
+ol > li::before {
+  font-weight: bold;
+  content: counter(item) ".";
+  margin-right: 8px;
+}
+
+.hidden {
+  display: none;
+}
