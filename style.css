@@ -175,6 +175,12 @@ li {
   height: 450px;
   background-size: cover;
 }
+#knight-image {
+  background: url('images/background.jpg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
 #gladiator-puls-image {
   background: url('images/gladiator_puls.jpg');
   overflow: hidden;
@@ -219,6 +225,12 @@ li {
 }
 #cinnamon-image {
   background: url('images/cinnamon.jpeg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
+#chicken-almonds-image {
+  background: url('images/chicken_and_almonds.jpeg');
   overflow: hidden;
   height: 450px;
   background-size: cover;
