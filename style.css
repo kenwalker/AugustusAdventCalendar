@@ -235,6 +235,12 @@ li {
   height: 450px;
   background-size: cover;
 }
+#pynade-image {
+  background: url('images/pynade.jpg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
 
 ol {
   counter-reset: item;
