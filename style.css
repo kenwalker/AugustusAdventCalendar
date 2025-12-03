@@ -241,6 +241,12 @@ li {
   height: 450px;
   background-size: cover;
 }
+#stuffed-dates-image {
+  background: url('images/stuffed_dates.jpg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
 
 ol {
   counter-reset: item;
