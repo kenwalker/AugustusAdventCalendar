@@ -247,6 +247,12 @@ li {
   height: 450px;
   background-size: cover;
 }
+#saffron-bread-image {
+  background: url('images/saffron_bread.jpg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
 
 ol {
   counter-reset: item;
