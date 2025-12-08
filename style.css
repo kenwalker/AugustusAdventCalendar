@@ -253,6 +253,12 @@ li {
   height: 450px;
   background-size: cover;
 }
+#travelers-stew-image {
+  background: url('images/travelers_stew.jpg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
 
 ol {
   counter-reset: item;
