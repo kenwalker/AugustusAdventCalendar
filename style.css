@@ -289,6 +289,12 @@ li {
   height: 450px;
   background-size: cover;
 }
+#leek-potato-soup-image {
+  background: url('images/leek-potato-soup.jpeg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
 
 ol {
   counter-reset: item;
