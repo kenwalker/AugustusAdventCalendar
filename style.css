@@ -283,6 +283,12 @@ li {
   height: 450px;
   background-size: cover;
 }
+#mushroom-pasties-image {
+  background: url('images/mushroom-pasties.jpg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
 
 ol {
   counter-reset: item;
