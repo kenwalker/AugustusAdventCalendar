@@ -259,6 +259,24 @@ li {
   height: 450px;
   background-size: cover;
 }
+#medieval-pastry-image {
+  background: url('images/medieval-pastry.jpeg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
+#beef-bacon-pie-image {
+  background: url('images/beef_bacon_pie.jpg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
+#roman-pork-image {
+  background: url('images/roman_pork.jpg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
 
 ol {
   counter-reset: item;
