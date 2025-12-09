@@ -277,6 +277,12 @@ li {
   height: 450px;
   background-size: cover;
 }
+#vegetable-herb-pie-image {
+  background: url('images/vegetable_herb_pie.jpeg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
 
 ol {
   counter-reset: item;
