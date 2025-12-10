@@ -295,6 +295,18 @@ li {
   height: 450px;
   background-size: cover;
 }
+#chicken-something-dumplings-image {
+  background: url('images/chicken-something-dumplings.jpeg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
+#books-image {
+  background: url('images/books.jpeg');
+  overflow: hidden;
+  height: 450px;
+  background-size: cover;
+}
 
 ol {
   counter-reset: item;
